@@ -1,6 +1,7 @@
 import React from "react";
 
-const About = () => {
+const About = (data) => {
+
   return (
     <div className="about">
       <h1>A bit about my journey</h1>
