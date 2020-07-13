@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 
-const About = (data) => {
 
+const About = (props) => {
+
+  console.log(props.data)
   return (
     <div className="about">
       <h1>A bit about my journey</h1>
