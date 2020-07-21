@@ -7,19 +7,14 @@ import Resume from "./Pages/Resume/Resume";
 import Project from "./Pages/Project/Project";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
+import Store from './context/Store'
 // import { UserContext } from "./context/UserContext";
 
 const App = () => {
-  const [data, setData] = useState({});
-  useEffect(() => {
-    const data = fetch("data/resumeData.json").then((response) => {
-      return response.json();
-    });
-    // console.log(data, "data");
-    data.then((res) => setData(res));
-  }, []);
+ 
 
   return (
+    <Store>
     <div className="App">
       <Router>
         <div>
@@ -47,7 +42,7 @@ const App = () => {
             renders the first one that matches the current URL. */}
           <Switch>
             <Route path="/about">
-              <About data={data} />
+              <About />
             </Route>
             <Route path="/resume">
               <Resume />
@@ -65,6 +60,7 @@ const App = () => {
         </div>
       </Router>
     </div>
+      </Store>
   );
 };
 
