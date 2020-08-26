@@ -1,24 +1,85 @@
 import React from "react";
-import ProgressBar from "./ProgressBar";
+import "./resume.css";
 
 const Resume = () => {
   return (
     <div className="main-container">
       <h1>Resume</h1>
+      <div>
+        <p>Education</p>
+        <ul>
+          <li>Lighthouse Labs</li>
+          <div className="education-container">
+            <p>
+              Fullstack Web Developer Diploma <span>&bull;</span>
+              <em> April2020 </em>
+            </p>
+          </div>
+          <li>IndiaOptions</li>
+          <p>
+            Software Automation Diploma <span>&bull;</span>
+            <em> December2016 </em>
+          </p>
+          <li>Centennial college</li>
+          <p>
+            Energy Systems Engineering <span>&bull;</span>
+            <em> April2016 </em>
+          </p>
+          <li>Calicut University</li>
+          <p>
+            Electrical and Computer Engineering <span>&bull;</span>
+            <em> April2013 </em>
+          </p>
+        </ul>
+      </div>
+      <div>
+        <p>Experience</p>
+        <ul>
+          <li>MedEssist</li>
+          <p>
+            Junior Full Stack Developer <span>&bull;</span>
+            <em> July2020 to Present </em>
+          </p>
+          <li>Orbixlab</li>
+          <p>
+            Front End Developer <span>&bull;</span>
+            <em> April2020 to Present </em>
+          </p>
+          <li>Bell</li>
+          <p>
+            Telecommunications Technician <span>&bull;</span>
+            <em> May2017 to December2019 </em>
+          </p>
+        </ul>
+      </div>
+      <div>
+        <p>skills</p>
+        <ul>
+          <li>Back end</li>
+          <div className="vertical-container">
+            <div className="vertical">
+              <div className="skills">
+                <p>Node.js</p>
+                <p>UX/UI Designer</p>
+                <p>Photographer</p>
+              </div>
+            </div>
+          </div>
+          <li>Front end</li>
+          <li>Frameworks</li>
+          <li>Database</li>
+          <li>Automation Frameworks</li>
+          <li>Design</li>
+          <li>Other tools</li>
+          <li>OS</li>
+          <li>Version control</li>
+        </ul>
+      </div>
+
       <div className="education-container">
-        <h1>Education</h1>
-        <h1>Lighthouse Labs</h1>
         <p>
           Fullstack Web Developer Diploma <span>&bull;</span>
           <em> April2020 </em>
-        </p>
-        <p>
-          It was an intense learning experience. I used to code almost 15 hours
-          per day during my bootcamp. We did 2 projects from scratch our own and
-          5 in-class projects. This project experience helped me to sharpen my
-          skills in React, Node.js, HTML, CSS, PostgreSQL etc. Moreover we get
-          hands on experience on testing frameworks as Selenium, Jest, Chai,
-          Cypress.
         </p>
       </div>
 
@@ -32,9 +93,6 @@ const Resume = () => {
       </div>
       <div className="skill-container"></div>
       <h1>Skills</h1>
-      <ul>
-        <ProgressBar/>
-      </ul>
     </div>
   );
 };
