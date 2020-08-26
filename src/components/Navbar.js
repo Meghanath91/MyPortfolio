@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar() {
+  const handleClick = () => {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+  };
   return (
     <nav className="navbar">
       <div>
@@ -26,6 +30,7 @@ export default function Navbar() {
         <Link className="Links" to="/contact">
           CONTACT
         </Link>
+        <button onClick={handleClick}>mode</button>
       </div>
     </nav>
   );

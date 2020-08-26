@@ -3,34 +3,23 @@
 .home {
   font-family: "Cormorant Garamond", serif;
   padding-left: 14.5%;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 7%;
+  margin-left: 4%;
+  font-size: 10vh;
 }
 .home h1 {
   font-weight: 500;
   margin: 0;
-  font-size: 12rem;
 }
-.portfolio {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-}
+
 .vertical {
   border-left: 3px solid rgb(248, 4, 4);
-  height: 15%;
-  position: absolute;
-  left: 25%;
-  top: 66%;
+  height: 5%;
+  margin-left: 5%;
+  font-size: 1.5rem;
 }
-.skills {
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  padding-left: 10%;
-  width: 100%;
-}
+
 .skills p {
-  margin: 4%;
+  margin: 1.2%;
+  width: 100%;
 }
