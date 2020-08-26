@@ -4,10 +4,9 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
-      <div>
-        <h1 className="my">My</h1>
-        <h1 className="portfolio">Portfolio</h1>
-      </div>
+      <h1 className="my">My</h1>
+      <h1 className="portfolio">Portfolio</h1>
+
       <div className="vertical-container">
         <div className="vertical">
           <div className="skills">

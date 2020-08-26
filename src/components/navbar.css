@@ -8,7 +8,7 @@ body {
   color: white;
 }
 .navbar {
-  font-family: "Bebas Neue", cursive;
+  /* font-family: "Bebas Neue", cursive; */
   font-family: "Cormorant Garamond", serif;
   display: flex;
   justify-content: space-around;
